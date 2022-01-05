@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="outside">
+        <form id="survey-form" action="/my-handling-form-page" method="post">
+            <h1 id="title">Application To Date Me</h1>
+            <p id="description">Please hurry up, otherwise you might have not get an opportunity to <b>date me</b> in this life!</p>
+            <p id="description"><span id="warning">&#9888; Warning</span>: It's gonna be super competitive out here, so please don't apply if you're not <i>Kim K in Met Gala'21</i> level confident!!</p>
+<br/>
+            <fieldset>
+
+                <legend>Who The Fuck Are You?</legend>
+
+                <div>
+                    <p id="name-heading">Couldn't care less about your name, so drop your</p>
+                    <label id="name-label" for="name">Twitter Handle:</label>
+                    <input type="text" required id="name" name="user_name" placeholder="It better be something cool">
+                </div>
+<br/>
+                <div>
+                    <p id="address-heading">Where do you live? Ex: IG,Twitter,Reddit,etc.</p>
+                    <label id="address-label" for="address">Address:</label>
+                    <input type="text" required id="address" name="user_address" placeholder="Pray that you don't disappoint">
+                </div>
+<br/>
+<br/>
+                <div>
+                    <label id="email-label" for="email">Email:</label>
+                    <input type="email" required id="email" name="user_email" placeholder="Your dopest email only">
+                </div>
+<br/>
+                <div>
+                    <p id="number-heading">I NEVER call! But might need it incase I don't get enough attention</p>
+                    <label id="number-label" for="number">Phone Number:</label>
+                    <input type="number" required id="number" name="user_number" placeholder="Should be never busy when I call">
+                </div>
+<br/>
+                <div>
+                    <p id="iq-heading">Don't write an answer unless it's more than Einstien's :)</p>
+                    <label id="iq-label" for="iq">IQ:</label>
+                    <input type="number" id="iq" name="iq" placeholder="Suggest you to skip it">
+                </div>
+                <br/>
+                <div>
+                    <p id="eq-heading">Should be of a man written by a woman</p>
+                    <label id="eq-label" for="eq">EQ:</label>
+                    <input type="number" required id="eq" name="eq" placeholder="Gotta be more than Kylie Jenner's ig followers">
+                </div>
+                <br/>
+                <br/>
+                <div>
+                    <label for="generation">Don't choose the last 3 options unless you own a yacht or something</label>
+                    <p>
+                        <input type="radio" name="generation" value="genz" checked>GenZ<br>
+                        <input type="radio" name="generation" value="millenial">Millenial<br>
+                        <input type="radio" name="generation" value="genx">GenX<br>
+                        <input type="radio" name="generation" value="boomer">Boomer<br>
+                    </p>
+                </div>
+                <br/>
+                <div>
+                    <p id="date-heading">IDC about you(yet)! So, just for funsies xD</p>
+                    <label for="date-label">When are you free for our first date(if selected):</label>
+                    <input id="a-date" type="date" name="bday">
+                </div>
+
+            </fieldset>
+<br/>
+            <fieldset>
+
+                <legend>Vibe Check</legend>
+
+                <div>
+                    <label for="cool">Rate your level of coolness</label>
+                    <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+                </div>
+                <br/>
+                <br/>
+                <div>
+                    <label for="generation">Check All That Apply</label>
+                    <p>
+                        <input type="checkbox" name="cry" value="cry">I cry atleast bazillion times a day<br>
+                        <input type="checkbox" name="reels" value="reels">I waste my time on ig reels and regret later, always<br>
+                        <input type="checkbox" name="crisis" value="crisis">I question my existence all the time<br>
+                        <input type="checkbox" name="memes" value="memes">No memes, no life<br>
+                        <input type="checkbox" name="coffee" value="coffee">My coffee's <i>Starbucks barista</i> level good<br>
+                        <input type="checkbox" name="main" value="main">After we start dating, YOU will be the main character in my life<br/>
+                        <input type="checkbox" name="lofi" value="lofi">I ONLY vibe with lo-fi/reverbed versions<br>
+                        <input type="checkbox" name="tiktok" value="tiktok">I know a minimum of 3 tiktok dances<br>
+                        <input type="checkbox" name="age" value="age">I make fun of everyone who's not GenZ<br>
+                        <input type="checkbox" name="twitter" value="twitter">I am NOT a pseudo-intellectual on Twitter<br>
+                        <input type="checkbox" name="news" value="news">Every morning, I get my news from Filter Coffee!<br> 
+                    </p>
+                </div>
+                <br/>
+                <br/>
+                <div>
+                   <label for="lingo">How good is your GenZ lingo?</label>
+                   <select id="dropdown">
+                       <option value="zero">Yikes</option>
+                       <option value="one">Basic</option>
+                       <option value="two">High-key good</option>
+                       <option value="last">My vocab fucks</option>
+                   </select> 
+                </div>
+                <br/>
+                <br/>
+                <div>
+                    <label for="generation">Can you afford therapy(for the both of us ofc)?</label>
+                    <p>
+                        <input type="radio" name="yes" value="yes" checked>Yes<br>
+                        <input type="radio" name="no" value="no">No<br>
+                    </p>
+                </div>
+
+            </fieldset>
+            <br/>
+            <fieldset>
+               
+                <legend>Essay</legend>
+
+                <div>
+                    <label for="msg"></label>
+                    <p>Describe your childhood traumas.</p>
+                    <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Just so I know what memes to share"></textarea>
+                </div>
+                <br/>
+                <div>
+                    <label for="msg"></label>
+                    <p>Write everything you know about me.</p>
+                    <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Recommend doing the Joe Goldberg stalking crash course"></textarea>
+                </div>
+                <br/>
+                <p>
+                    Upload a selfie with your favourite filter:
+                    <button id="post-button">Post</button>
+                </p>
+
+            </fieldset>
+
+            <div id="submitbutton">
+                <button type="submit" id="submit">Submit. Amen!</button></div>
+
+        </form>
+    </div>   
+</body>
+</html>
